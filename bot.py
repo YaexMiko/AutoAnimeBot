@@ -29,13 +29,13 @@ from functions.tools import Tools, asyncio
 from functions.utils import AdminUtils
 from libs.ariawarp import Torrent
 from libs.logger import LOGS, Reporter
-from libs.subsplease import SubsPlease
+from libs.varyg1001 import varyg1001
 
 tools = Tools()
 tools.init_dir()
 bot = Bot()
 dB = DataBase()
-subsplease = SubsPlease(dB)
+subsplease = varyg1001(dB)
 torrent = Torrent()
 schedule = ScheduleTasks(bot)
 admin = AdminUtils(dB, bot)
